@@ -1,0 +1,9 @@
+sources:
+  - name: ProgramAPI
+    handler:
+      openapi:
+        source: './oas/program-api.json'
+        baseUrl: 'https://sandbox-api.gpsrv.com/intserv/4.0'
+        operationHeaders:
+          response-content-type: json
+        skipSchemaValidation: true
